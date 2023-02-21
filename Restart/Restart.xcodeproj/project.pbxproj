@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		4DB9734529A52A750067D027 /* Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB9734829A52A750067D027 /* RestartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartApp.swift; sourceTree = "<group>"; };
-		4DB9734A29A52A750067D027 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DB9734A29A52A750067D027 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Restart/Screens/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		4DB9734C29A52A790067D027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DB9734F29A52A790067D027 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DB9735729A52D030067D027 /* character-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "character-2.png"; sourceTree = "<group>"; };
@@ -30,8 +30,8 @@
 		4DB9735C29A52D1F0067D027 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		4DB9735D29A52D1F0067D027 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		4DB9736329A5394A0067D027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4DB9736429A539F20067D027 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		4DB9736629A539FE0067D027 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DB9736429A539F20067D027 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = Restart/Screens/OnboardingView.swift; sourceTree = SOURCE_ROOT; };
+		4DB9736629A539FE0067D027 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Restart/Screens/HomeView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 		4DB9734729A52A750067D027 /* Restart */ = {
 			isa = PBXGroup;
 			children = (
+				4DB9739029A555E00067D027 /* Utilities */,
+				4DB9738F29A555D60067D027 /* Views */,
 				4DB9736329A5394A0067D027 /* Info.plist */,
-				4DB9736229A5378F0067D027 /* Utilities */,
-				4DB9736129A5377D0067D027 /* Views */,
 				4DB9735B29A52D150067D027 /* Sounds */,
 				4DB9735629A52CF30067D027 /* Characters */,
 				4DB9734829A52A750067D027 /* RestartApp.swift */,
@@ -113,14 +113,14 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		4DB9736129A5377D0067D027 /* Views */ = {
+		4DB9738F29A555D60067D027 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4DB9736229A5378F0067D027 /* Utilities */ = {
+		4DB9739029A555E00067D027 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 			);
