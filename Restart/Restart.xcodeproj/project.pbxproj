@@ -15,6 +15,8 @@
 		4DB9735A29A52D030067D027 /* character-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB9735829A52D030067D027 /* character-1.png */; };
 		4DB9735E29A52D1F0067D027 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4DB9735C29A52D1F0067D027 /* success.m4a */; };
 		4DB9735F29A52D1F0067D027 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DB9735D29A52D1F0067D027 /* chimeup.mp3 */; };
+		4DB9736529A539F20067D027 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9736429A539F20067D027 /* OnboardingView.swift */; };
+		4DB9736729A539FE0067D027 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB9736629A539FE0067D027 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4DB9735C29A52D1F0067D027 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		4DB9735D29A52D1F0067D027 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		4DB9736329A5394A0067D027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4DB9736429A539F20067D027 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4DB9736629A539FE0067D027 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				4DB9734A29A52A750067D027 /* ContentView.swift */,
+				4DB9736429A539F20067D027 /* OnboardingView.swift */,
+				4DB9736629A539FE0067D027 /* HomeView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -195,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB9736529A539F20067D027 /* OnboardingView.swift in Sources */,
+				4DB9736729A539FE0067D027 /* HomeView.swift in Sources */,
 				4DB9734B29A52A750067D027 /* ContentView.swift in Sources */,
 				4DB9734929A52A750067D027 /* RestartApp.swift in Sources */,
 			);
