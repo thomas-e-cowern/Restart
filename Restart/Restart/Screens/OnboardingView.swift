@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    // MARK: Properties
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
+    
+    // MARK: Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Onboarding")
+                .font(.largeTitle)
+            
+            Button {
+                isOnboardingViewActive = false
+            } label: {
+                Text("Start")
+            }
+
+        }  //: End of VStack
     }
 }
 
+// MARK: Preview
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
