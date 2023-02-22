@@ -17,16 +17,26 @@ struct OnboardingView: View {
             Color("ColorBlue")
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                Text("Onboarding")
-                    .font(.largeTitle)
+            VStack(spacing: 20) {
+                // MARK: Header
+                Spacer()
                 
-                Button {
-                    isOnboardingViewActive = false
-                } label: {
-                    Text("Start")
+                VStack {
+                    Text("Share")
+                        .font(.system(size: 60))
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                    
+                    Text("It's not how much we give, but how much love we put into giving")
+                        .multilineTextAlignment(.center)
+                        .font(.title3)
+                        .fontWeight(.light)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
                 }
+                // MARK: Center
                 
+                // MARK: Footer
             } //: End of VStack
         } //: End of ZStack
     }
