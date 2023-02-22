@@ -89,6 +89,9 @@ struct OnboardingView: View {
                         } //: End of ZStack
                         .foregroundColor(.white)
                         .frame(width: 80, height: 80, alignment: .center)
+                        .onTapGesture {
+                            isOnboardingViewActive = false
+                        }
                         
                         Spacer()
                     } //: End of HStack
