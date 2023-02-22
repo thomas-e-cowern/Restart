@@ -13,17 +13,22 @@ struct OnboardingView: View {
     
     // MARK: Body
     var body: some View {
-        VStack {
-            Text("Onboarding")
-                .font(.largeTitle)
+        ZStack {
+            Color("ColorBlue")
+                .edgesIgnoringSafeArea(.all)
             
-            Button {
-                isOnboardingViewActive = false
-            } label: {
-                Text("Start")
-            }
-
-        }  //: End of VStack
+            VStack {
+                Text("Onboarding")
+                    .font(.largeTitle)
+                
+                Button {
+                    isOnboardingViewActive = false
+                } label: {
+                    Text("Start")
+                }
+                
+            } //: End of VStack
+        } //: End of ZStack
     }
 }
 
