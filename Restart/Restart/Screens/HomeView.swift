@@ -18,6 +18,13 @@ struct HomeView: View {
                 .ignoresSafeArea(.all)
 
             // MARK: Header
+            
+            Spacer()
+            
+            Image("character-2")
+                .resizable()
+                .scaledToFit()
+            
             ZStack {
                 Circle()
                     .stroke(.gray.opacity(0.2), lineWidth: 40)
@@ -26,9 +33,7 @@ struct HomeView: View {
                     .stroke(.gray.opacity(0.2), lineWidth: 80)
                     .frame(width: 260, height: 260, alignment: .center)
                 
-                Image("character-2")
-                    .resizable()
-                    .scaledToFit()
+                
             }
             //: End of ZStack
             
@@ -37,29 +42,28 @@ struct HomeView: View {
                 .multilineTextAlignment(.center)
                 .font(.title3)
                 .fontWeight(.light)
-                .foregroundColor(.black)
+                .foregroundColor(.secondary)
                 .padding(.horizontal, 20)
             
             
             // MARK: Footer
-            ZStack {
-                Capsule()
-                    .fill(Color("ColorBlue"))
-                    .frame(width: 160, height: 60)
-                
-                HStack {
-                    Image(systemName: "target")
-                        .foregroundColor(.white)
-                        .font(.system(size: 24, weight: .bold))
-                    
-                    Text("Restart")
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                }
-                
-            } //: End of ZStack
             
             Spacer()
+        
+            Button {
+                isOnboardingViewActive = true
+            } label: {
+                Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                    .foregroundColor(.white)
+                    .font(.system(size: 24, weight: .bold))
+                
+                Text("Restart")
+                    .font(.system(.title3, design: .rounded))
+                    .fontWeight(.bold)
+            }
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
+            .controlSize(.large)
         }  //: End of VStack
     }
 }
