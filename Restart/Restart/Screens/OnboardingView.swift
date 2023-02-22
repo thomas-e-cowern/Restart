@@ -35,7 +35,16 @@ struct OnboardingView: View {
                         .padding(.horizontal, 20)
                 }
                 // MARK: Center
+                ZStack {
+                    Circle()
+                        .stroke(.white.opacity(0.2), lineWidth: 40)
+                        .frame(width: 260, height: 260, alignment: .center)
+                    Circle()
+                        .stroke(.white.opacity(0.2), lineWidth: 80)
+                        .frame(width: 260, height: 260, alignment: .center)
+                } //: End of ZStack
                 
+                Spacer()
                 // MARK: Footer
             } //: End of VStack
         } //: End of ZStack
