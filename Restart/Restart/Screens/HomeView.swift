@@ -13,29 +13,23 @@ struct HomeView: View {
     
     // MARK: - Body
     var body: some View {
-        VStack(alignment: .center) {
-            Color(.white)
-                .ignoresSafeArea(.all)
+        VStack(spacing: 20) {
 
             // MARK: Header
             
             Spacer()
             
-            Image("character-2")
-                .resizable()
-                .scaledToFit()
-            
             ZStack {
-                Circle()
-                    .stroke(.gray.opacity(0.2), lineWidth: 40)
-                    .frame(width: 260, height: 260, alignment: .center)
-                Circle()
-                    .stroke(.gray.opacity(0.2), lineWidth: 80)
-                    .frame(width: 260, height: 260, alignment: .center)
                 
+                CircleGroupVIew(shapeColor: .gray, shapeOpacity: 0.1)
                 
+                Image("character-2")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
             }
-            //: End of ZStack
+            
+            
             
             // MARK: Center
             Text("The time that leads to mastery is dependent on the intensity of our focus")
