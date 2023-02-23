@@ -54,6 +54,7 @@ struct OnboardingView: View {
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 1.0), value: isAnimating)
                         .offset(x: imageOffset.width * 1.2, y: 0)
+                        .rotationEffect(.degrees(Double(imageOffset.width / 20)))
                         .gesture(DragGesture().onChanged({ gesture in
                             if abs(imageOffset.width) <= 150 {
                                 imageOffset = gesture.translation
@@ -62,6 +63,7 @@ struct OnboardingView: View {
                             .onEnded({ _ in
                                 imageOffset = .zero
                             }))
+                        .animation(.easeIn(duration: 1), value: imageOffset)
                     
                 } //: End of ZStack
                 
