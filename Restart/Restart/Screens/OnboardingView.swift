@@ -13,6 +13,7 @@ struct OnboardingView: View {
     
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
     @State private var buttonOffset: CGFloat = 0
+    @State private var isAnimating: Bool = false
     
     // MARK: Body
     var body: some View {
@@ -37,6 +38,11 @@ struct OnboardingView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 20)
                 }
+                .opacity(isAnimating ? 1 : 0)
+                .offset(y: isAnimating ? 0 : -40)
+                .animation(.easeOut(duration: 1), value: isAnimating)
+                
+                
                 // MARK: Center
                 ZStack {
                     CircleGroupVIew(shapeColor: .white, shapeOpacity: 0.2)
@@ -113,6 +119,9 @@ struct OnboardingView: View {
                 .padding()
             } //: End of VStack
         } //: End of ZStack
+        .onAppear {
+            isAnimating = true
+        }
     }
 }
 
